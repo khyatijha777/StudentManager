@@ -31,11 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'student_profile',
-    'total_attendance',
-    'teacher_profile',
+    'profiles',
     'attendance_app',
-    'daily_attendance',
+    'home',
+    'class_info',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -83,9 +82,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'attendance',
         'USER':'postgres',
-        'paasword':'post',
-        'HOST': 'localhost',
-
+        'PAASWORD':'post',
+        'HOST': 'localhost'
     }
 }
 
